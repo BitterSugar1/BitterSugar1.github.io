@@ -13,21 +13,20 @@
         &:hover {
             .event-card__title {
             color: @red;
-            text-decoration-color: @red
-
-    }
+            text-decoration-color: @red;
+            }
         }
     }
 
     &__picture {
         display: block;
         position: relative;
-        margin: 0 0 25 px;
+        margin: 0 0 25px;
         font-size: 0;
         text-decoration: none;
         overflow: hidden;
-        &:after {
-            content: '';
+        &::after {
+            content: "";
             display: block;
             width: 100%;
             padding-top: 107.16%;
