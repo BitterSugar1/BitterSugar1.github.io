@@ -10,8 +10,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
   padding-top: 147px;
-  background-color: #dedede;
-  background-image: url(../assets/images/noise.png), url(../assets/images/bg.png);
+  background-color: @gray;
+  background-image: url(../assets/images/noise.png);
   background-position: 0 0, 0 0;
   background-size: auto, 100% auto;
   background-repeat: repeat, repeat-y;
@@ -42,4 +42,38 @@ img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+	
+input,
+textarea,
+select {
+  box-shadow: none;
+  outline: none;
+  color: @black;
+  font-family: @font1;
+}
+
+input,
+textarea {
+  &::placeholder {
+    color: #6c6c6c;
+  }
+}
+
+input:focus,
+textarea:focus {
+  &::placeholder {
+    color: transparent;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+body {
+  padding: 10px;
+  background-color: #dedede;
+  font-family: @font1;
 }
