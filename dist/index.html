@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimim-scale=1,maximum-scale=1,user-scalable=no" />
   <title>Lenni Art</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@400,500;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400...700;1,400...700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -14,8 +15,8 @@
   <header class="page-header">
     <div class="page-header__container">
       <a href="#" class="page-header__logo">
-        <svg class="page-header__logo-icon">
-          <use xlink:href="assets/icons/symbols.svg#logo">
+        <svg class="page-header__logo-icon" width="202" height="147">
+          <use xlink:href="assets/icons/symbols.svg#logo" />
         </svg>
       </a>
       <nav class="page-header__nav">
@@ -23,9 +24,22 @@
         <a href="#" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">Александр С.</a>
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__logo-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#log-in" />
+            </svg>
+          </a>
+        </div>
       </nav>
       <div class="page-header__right-block">
-        <a href="#" class="page-header__btn btn">Войти</a>
+        <a href="#" class="page-header__btn btn">Войти
+          <svg class="page-header__user-icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#user" />
+          </svg>
+        </a>
+        <button type="button" class="page-header__nav-toggle"></button>
       </div>
     </div>
   </header>
@@ -180,9 +194,7 @@
             <div class="about__block">
               <h3 class="about__block-title">Проект «Millennials»</h3>
               <p class="about__block-text">
-                Вдохновлён молодыми идейными людьми, увлечёнными творчеством, эмоциями
-                и желанием сделать мир лучше, проявить себя. У них есть талант и стремление,
-                у нас — возможность помочь им воплотить их мечту в реальность.
+                Вдохновлён молодыми идейными людьми, увлечёнными творчеством, эмоциями и желанием сделать мир лучше, проявить себя. У них есть талант и стремление, у нас — возможность помочь им воплотить их мечту в реальность.
               </p>
             </div>
 
@@ -196,10 +208,7 @@
               <h3 class="about__block-title">Мы предоставляем площади для вашего мероприятия</h3>
               <p class="about__block-text">
                 И оказываем помощь с организацией, если вам это нужно.
-                <br>
-                Наша цель — вовлечь в культурную жизнь города как можно больше людей,
-                помочь молодым ребятам сделать первые шаги к своей мечте
-                и рассказать всем о том, что их волнует.
+                <br>Наша цель — вовлечь в культурную жизнь города как можно больше людей, помочь молодым ребятам сделать первые шаги к своей мечте и рассказать всем о том, что их волнует.
               </p>
             </div>
 
@@ -209,10 +218,8 @@
               <div class="about__stats-overlay">
                 <p class="about__stats-text">
                   Мы уже успешно организовали и
-                  <br>
-                  провели более 100 проектов.
-                  <br>
-                  Посмотрите, как это было классно.
+                  <br>провели более 100 проектов.
+                  <br>Посмотрите, как это было классно.
                 </p>
 
                 <a href="#" class="about__view-link">
@@ -234,10 +241,11 @@
 
     <head>
       <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1,minimim-scale=1,maximum-scale=1,user-scalable=no" />
       <title>Lenni Art</title>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@400,500;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400...700;1,400...700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="styles/styles.css">
     </head>
 
@@ -245,8 +253,8 @@
       <header class="page-header">
         <div class="page-header__container">
           <a href="#" class="page-header__logo">
-            <svg class="page-header__logo-icon">
-              <use xlink:href="assets/icons/symbols.svg#logo">
+            <svg class="page-header__logo-icon" width="202" height="147">
+              <use xlink:href="assets/icons/symbols.svg#logo" />
             </svg>
           </a>
           <nav class="page-header__nav">
@@ -254,9 +262,22 @@
             <a href="#" class="page-header__nav-link">Блог</a>
             <a href="#" class="page-header__nav-link">О нас</a>
             <a href="#" class="page-header__nav-link">Контакты</a>
+            <div class="page-header__nav-user">
+              <a href="#" class="page-header__nav-user-link">Александр С.</a>
+              <a href="#" class="page-header__nav-logout">
+                <svg class="page-header__logo-icon" width="24" height="24">
+                  <use xlink:href="assets/icons/symbols.svg#log-in" />
+                </svg>
+              </a>
+            </div>
           </nav>
           <div class="page-header__right-block">
-            <a href="#" class="page-header__btn btn">Войти</a>
+            <a href="#" class="page-header__btn btn">Войти
+              <svg class="page-header__user-icon" width="24" height="24">
+                <use xlink:href="assets/icons/symbols.svg#user" />
+              </svg>
+            </a>
+            <button type="button" class="page-header__nav-toggle"></button>
           </div>
         </div>
       </header>
@@ -518,18 +539,22 @@
               Дополнительные услуги
             </h2>
             <p class="events__section-description">
-              Перед запуском проекта, мы подготавливаем подробную смету и согласуем ее с клиентом. Убедившись, что
-              все пожеланию учтены и мы можем приступать к реализациии проекта, начинается сложная, но интересная
-              работа, результатом которой будет проведение вашего мероприятия на высшем уровне.
+              Перед запуском проекта, мы подготавливаем подробную смету и согласуем ее с клиентом. Убедившись, что все пожеланию учтены и мы можем приступать к реализациии проекта, начинается сложная, но интересная работа, результатом которой будет проведение вашего мероприятия на высшем уровне.
             </p>
 
             <table class="table">
               <thead class="table__head">
                 <tr class="table__head-tr">
                   <th class="table__th"></th>
-                  <th class="table__th">Тариф «Light»</th>
-                  <th class="table__th">Тариф «Promo»</th>
-                  <th class="table__th">Тариф «All stars»</th>
+                  <th class="table__th">Тариф
+                    <br />«Light»
+                  </th>
+                  <th class="table__th">Тариф
+                    <br />«Promo»
+                  </th>
+                  <th class="table__th">Тариф
+                    <br />«All stars»
+                  </th>
                 </tr>
               </thead>
               <tbody class="table__body">
@@ -618,9 +643,15 @@
               <tfoot class="table__footer">
                 <tr class="table__footer-tr">
                   <th class="table__footer-th"></th>
-                  <th class="table__footer-th">Тариф «Light»</th>
-                  <th class="table__footer-th">Тариф «Promo»</th>
-                  <th class="table__footer-th">Тариф «All stars»</th>
+                  <th class="table__footer-th">Тариф
+                    <br /> «Light»
+                  </th>
+                  <th class="table__footer-th">Тариф
+                    <br /> «Promo»
+                  </th>
+                  <th class="table__footer-th">Тариф
+                    <br /> «All stars»
+                  </th>
                 </tr>
               </tfoot>
             </table>
