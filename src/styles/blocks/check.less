@@ -5,71 +5,50 @@
     flex-direction: column;
     align-items: flex-start;
     min-height: 24px;
-    padding-left: 40px;
     padding-top: 2px;
+    padding-left: 24px;
     color: @black;
     cursor: pointer;
+
     &__input {
         .is-hidden();
         &:checked {
-            & ~ .check__mark {
-                background-color: @black;
-                &::after {
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    left: 7px;
-                    top: 2px;
-                    width: 6px;
-                    height: 12px;
-                    border-bottom: 2px solid @white;
-                    border-right: 2px solid @white;
-                    transform: rotate(45deg);
-                }
+          & ~ .check__mark {
+            background-color: @black1;
+            &::after {
+              content: "";
+              display: block;
+              position: absolute;
+              left: 7px;
+              top: 2px;
+              width: 6px;
+              height: 12px;
+              border-bottom: 2px solid @white;
+              border-right: 2px solid @white;
+              transform: rotate(45deg);
             }
+          }
         }
-    }
+      }
+
     &__mark {
         box-sizing: border-box;
         display: block;
         position: absolute;
-        top: 0;
         left: 0;
+        top: 0;
         width: 24px;
         height: 24px;
         border: 1px solid @black;
-        transition: background-color 0.2s, border-color 0.2s;
-    }
+      }
     &__label {
-        font-weight: 400;
+        margin-left: 15px;
+        font-weight: 300;
         font-size: 16px;
-        line-height: 1.375;
-        transition: color 0.2s;
-        &--fz14 {
-            font-size: 14px;
-        }
-    
-    }
-    
-    &--selected {
-        color: @red;
-        .check__mark {
-            border-color: @red;
-        }
-        .check__input:checked ~ .check__mark {
-            background-color: @red;
+        line-height: 22px;
+        &--s {
+        font-size: 14px;
+        line-height: 19px;
         }
     }
-    
-    &--disabled {
-        color: fade(@black, 35%);
-        cursor: not-allowed;
-        .check__mark {
-            border-color: fade(@black, 20%);
-            background-color: fade(@black, 6%);
-        }
-        .check__input:checked ~ .check__mark {
-            background-color: fade(@black, 20%);
-        }
-    }
-}
+  }
