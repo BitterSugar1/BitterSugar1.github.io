@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('blocks/head.html')
+@@include('blocks/head.html')
+
 <body class="body">
-	<!--Шапка-->
-	@@include('blocks/page-header.html')
-	<!--Основной блок-->
-	<main class="main"> 
+    <!--Шапка-->
+    @@include('blocks/page-header.html')
+    <!--Основной блок-->
+    <main class="main">
         <article class="article">
             <div class="article__container">
                 <h1 class="article__title">Заголовок</h1>
@@ -18,7 +19,8 @@
                     <h5>Заголовок h5</h5>
                     <h6>Заголовок h6</h6>
                     <!--Текст-->
-                    <p>Абзац текста, содержащий <b>жирный</b> текст и <a href="https://tagree.ru/" target="_blank">ссылку</a>.</p>
+                    <p>Абзац текста, содержащий <b>жирный</b> текст и <a href="https://tagree.ru/"
+                            target="_blank">ссылку</a>.</p>
                     <!--Ненумерованный список-->
                     <ul>
                         <li>Элемент списка 1</li>
@@ -38,12 +40,15 @@
                     <!--Картинка-->
                     <img src="assets/images/image.jpg" alt="Подпись картинки">
                 </div>
-                </div>
+            </div>
             </div>
         </article>
-	</main>
-	<!--Футрер-->
-	@@include('blocks/page-footer.html')
+    </main>
+    <!--Футрер-->
+    @@include('blocks/page-footer.html')
+
+    <script src="scripts/jquery.validate.js"></script>
 
 </body>
+
 </html>
